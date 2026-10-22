@@ -46,7 +46,7 @@ Split the sequence into non-overlapping triplets (codons)
 Count occurrences of each of the 64 possible codons
 Store results in a gene × codon count matrix
 ```{r retrieve_ensembl}
-cds <- readRDS(url("https://github.com/kvbortle/MCB290_VanBortleLab_Undergraduate_Projects/raw/refs/heads/main/data/Ensemblv115.CDS.RDS"))
+cds <- readRDS("updated_CDS.RDS")
 head(cds)
 ```
 ```{r build_codon_key}
